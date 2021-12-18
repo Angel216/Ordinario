@@ -11,7 +11,7 @@ class CriptosListAdapter(private val criptosList: List<CriptosModel>) : Recycler
     inner class ViewHolder(private val binding: CriptomonedaListItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(cripto: CriptosModel) {
             binding.criptoName.text = cripto.name
-            binding.criptoPrecio.text = cripto.USDprice.toString()
+            binding.criptoPrecio.text = cripto.priceUsd.toString()
             binding.criptoPorcentaje.text = cripto.changePercent24Hr+"%"
             binding.criptoSymbol.text = "Symbol: "+cripto.symbol
         }

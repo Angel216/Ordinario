@@ -4,7 +4,7 @@ class CriptosModel (
     val id: String,
     val symbol: String,
     val name: String,
-    val USDprice: Double,
+    val priceUsd: Double,
     val changePercent24Hr: String
         ){
 }
